@@ -1,7 +1,7 @@
 import { Get, JsonController, Post, Res } from "routing-controllers";
 import type { Response } from "express";
 
-@JsonController('/service')
+@JsonController('')
 export class ServerController {
   @Get('/health')
   async checkApplicationHealth(@Res() res: Response) {
