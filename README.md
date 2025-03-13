@@ -40,9 +40,9 @@ Run the following command to start a PostgreSQL database in a Docker container:
 
 Clone the repository and install dependencies:
 
-```git clone https://github.com/betaDev01/roomBooking_server.git```
+```git clone https://github.com/betaDev01/node-auth.git```
 
-```cd roomBooking_server```
+```cd node-auth```
 
 ```npm install```
 
