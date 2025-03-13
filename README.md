@@ -1,4 +1,4 @@
-# Hotel Booking Backend - roomBooking_server
+# Authentication Based Node Server
 
 ## 📌 Overview
  Node.js based server application that does the following,
