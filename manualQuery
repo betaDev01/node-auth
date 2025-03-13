@@ -1,0 +1,25 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+create table if not exists user_details(
+ id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+ email VARCHAR(255) UNIQUE NOT NULL,  
+ phone_number VARCHAR(255) UNIQUE NOT NULL,
+ "password" VARCHAR(255) NOT NULL, 
+ user_token VARCHAR(255) not null,
+ created_at timestamp without time zone default now(),
+ is_admin Boolean default false,
+ is_locked BOOLEAN DEFAULT false
+);
+
+create table user_configuration (
+  number_of_attempts int not null,
+  link_duration int default null,
+  created_at timestamp without time zone default now()
+)
+
+create table user_interview_link(
+  email VARCHAR(255) default NULL,
+  phone_number VARCHAR(255) default NULL,
+  link text not null,
+  is_valid boolean default true	
+)
