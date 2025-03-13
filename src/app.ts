@@ -21,7 +21,7 @@ export class App {
 
     const limiter = rateLimit({
       windowMs: 5 * 60 * 1000,
-      limit: 5
+      limit: 10
     });
 
     this.app.use(limiter);
